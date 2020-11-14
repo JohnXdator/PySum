@@ -190,9 +190,18 @@ def hovereq(e):
 	buttonEq['bg'] = "gainsboro"	
 def leaveeq(e):
 	buttonEq['bg'] = "SystemButtonFace"
+def hoverpoint(e):
+	buttonPoint['bg'] = "gainsboro"	
+def leavepoint(e):
+	buttonPoint['bg'] = "SystemButtonFace"
 
-button0 = Button(myFrame, text="0", width=10, height=2, borderwidth=0, command=lambda:inp(0, equation))
-button0.grid(row=6, column=1, padx=0, pady=0, columnspan=2)
+buttonPoint = Button(myFrame, text=".", width=4, height=2, borderwidth=0, command=lambda:inp('.', equation))
+buttonPoint.grid(row=6, column=1, padx=0, pady=0)
+buttonPoint.configure(font=("Verdana", 18))
+buttonPoint.bind("<Enter>", hoverpoint)
+buttonPoint.bind("<Leave>", leavepoint)
+button0 = Button(myFrame, text="0", width=4, height=2, borderwidth=0, command=lambda:inp(0, equation))
+button0.grid(row=6, column=2, padx=0, pady=0)
 button0.configure(font=("Verdana", 18))
 button0.bind("<Enter>", hover0)
 button0.bind("<Leave>", leave0)
