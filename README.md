@@ -15,6 +15,7 @@ The PySum Calculator app is a modern and atractive app written in Python. This a
 |   Equal       |       =       |
 |   Square Root |   sqrt(**0.5) |
 |   Clear       |       C       |
+| Decimal Point |       .       |
 
 ## License
 
