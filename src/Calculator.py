@@ -1,5 +1,4 @@
 from tkinter import *
-import math
 
 raice = Tk()
 raice.geometry('300x450')
