@@ -43,21 +43,12 @@ screen.grid(row=1, column=1, padx=0, pady=18, columnspan=4)
 screen.config(background="SystemButtonFace", justify="right", fg="#000000", bd=0, width=18)
 screen.configure(font=("Verdana", 18))
 
+# -------------Row 1-------------------
 
-# Row 1
-def hoverR(e):
-	buttonR['bg'] = "gainsboro"	
-def leaveR(e):
-	buttonR['bg'] = "SystemButtonFace"
-
-buttonC = Button(myFrame, text="C", width=15, height=2, borderwidth=0, bg="gainsboro", command=lambda:Cbutton(equation))
-buttonC.grid(row=2, column=1, padx=0, pady=0, columnspan=3)
+buttonC = Button(myFrame, text="C", width=20, height=2, borderwidth=0, bg="gainsboro", command=lambda:Cbutton(equation))
+buttonC.grid(row=2, column=1, padx=0, pady=0, columnspan=4)
 buttonC.configure(font=("Verdana", 18))
-buttonR = Button(myFrame, text="sqrt", width=4, height=2, borderwidth=0, command=lambda:sq(equation, "**0.5"))
-buttonR.grid(row=2, column=4, padx=0, pady=0)
-buttonR.configure(font=("Verdana", 18))
-buttonR.bind("<Enter>", hoverR)
-buttonR.bind("<Leave>", leaveR)
+
 
 # -----------------Row 2--------------------
 def hover7(e):
