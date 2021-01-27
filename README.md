@@ -10,7 +10,7 @@ The PySum Calculator app is a modern and atractive app written in Python. This a
 | ------------- | ------------- |
 |     Add       |       +       |
 |   Substract   |       -       |
-|   Multiply    |       x       |
+|   Multiply    |       ×	      |
 |   Divide      |       ÷       |
 |   Equal       |       =       |
 |   Clear       |       C       |
